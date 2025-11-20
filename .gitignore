@@ -1,3 +1,53 @@
-.idea
+# Общие правила для Python/IDE/OS
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Тестовые/временные файлы
+.pytest_cache/
+coverage/
+htmlcov/
+*.log
+
+# Не коммитить датасеты и большие артефакты
+# явные пути (пример для этого репозитория)
+/subset.csv
+/subset.json
+/round1/dataset.csv
+/round2/dataset.json
+
+# шаблон: любые файлы с именем dataset и любым расширением в любом месте
+**/dataset.*
+
+# Папки с большими архивами/результатами
+**/pdfs/
+**/submissions/
+
+# Прочее
+*.pdf
+scores.numbers
+
+# Секреты / окружение
+.env
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Локальные файлы, если нужны только локально — используйте .git/info/exclude.idea
 subset.json
 .envrc
